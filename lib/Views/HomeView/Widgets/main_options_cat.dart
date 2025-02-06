@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gc_clone/Views/HomeView/Widgets/custom_list_tile.dart';
 import 'package:gc_clone/Views/HomeView/home_view.dart';
-import 'package:gc_clone/Views/NotificationsView/notification_view.dart';
 import 'package:gc_clone/utils/cores/functions.dart';
+import 'package:go_router/go_router.dart';
 
 class MainOptionsCategory extends StatelessWidget {
   const MainOptionsCategory({super.key});
@@ -33,11 +33,7 @@ class MainOptionsCategory extends StatelessWidget {
           listTileName: "Notifications",
           function: (context) {
             Navigator.of(context).pop();
-            Navigator.of(context).pushReplacement(
-              MaterialPageRoute(
-                builder: (context) => const NotificationView(),
-              ),
-            );
+            context.push("/notifications");
           },
         ),
       ],

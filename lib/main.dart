@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gc_clone/Views/HomeView/home_view.dart';
 import 'package:gc_clone/constants.dart';
+import 'package:gc_clone/routers.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(const MainApp());
@@ -10,9 +10,9 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: router,
       debugShowCheckedModeBanner: false,
-      home: const HomeView(),
       theme: ThemeData(
         listTileTheme: ListTileThemeData(
           textColor: Colors.grey,
@@ -37,6 +37,10 @@ class MainApp extends StatelessWidget {
         textTheme: GoogleFonts.poppinsTextTheme().apply(
           bodyColor: Colors.white,
           displayColor: Colors.white,
+        ),
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+          backgroundColor: kPrimaryColor,
+          unselectedItemColor: Colors.grey,
         ),
       ),
       themeMode: ThemeMode.dark,

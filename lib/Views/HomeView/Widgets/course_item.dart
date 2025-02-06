@@ -1,70 +1,76 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class CourseItem extends StatelessWidget {
   const CourseItem({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: MediaQuery.of(context).size.height / 7,
-      decoration: BoxDecoration(
-        color: Colors.blue,
-        borderRadius: BorderRadius.circular(10),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-        child: Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const Text(
-                  "PHYS 104 - LAB 2",
-                  style: TextStyle(fontSize: 20),
-                ),
-                IconButton(
-                  icon: const Icon(Icons.more_vert, color: Colors.white),
-                  onPressed: () => showModalBottomSheet(
-                    context: context,
-                    builder: (context) {
-                      return BottomSheet(
-                        onClosing: () {},
-                        builder: (context) {
-                          return const Padding(
-                            padding: EdgeInsets.symmetric(
-                              horizontal: 10,
-                              vertical: 20,
-                            ),
-                            child: Padding(
-                              padding: EdgeInsets.only(left: 8.0),
-                              child: Align(
-                                alignment: Alignment.centerLeft,
-                                heightFactor: 1,
-                                child: Text(
-                                  "Hide",
+    return InkWell(
+      onTap: () {
+        context.push("/course");
+      },
+      child: Container(
+        height: MediaQuery.of(context).size.height / 7,
+        decoration: BoxDecoration(
+          color: Colors.blue,
+          borderRadius: BorderRadius.circular(10),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text(
+                    "PHYS 104 - LAB 2",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.more_vert, color: Colors.white),
+                    onPressed: () => showModalBottomSheet(
+                      context: context,
+                      builder: (context) {
+                        return BottomSheet(
+                          onClosing: () {},
+                          builder: (context) {
+                            return const Padding(
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 10,
+                                vertical: 20,
+                              ),
+                              child: Padding(
+                                padding: EdgeInsets.only(left: 8.0),
+                                child: Align(
+                                  alignment: Alignment.centerLeft,
+                                  heightFactor: 1,
+                                  child: Text(
+                                    "Hide",
+                                  ),
                                 ),
                               ),
-                            ),
-                          );
-                        },
-                      );
-                    },
+                            );
+                          },
+                        );
+                      },
+                    ),
                   ),
-                ),
-              ],
-            ),
-            const Spacer(),
-            const Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                "Salem Farag Hegazy",
-                style: TextStyle(fontSize: 12),
+                ],
               ),
-            ),
-            const SizedBox(
-              height: 5,
-            ),
-          ],
+              const Spacer(),
+              const Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  "Salem Farag Hegazy",
+                  style: TextStyle(fontSize: 12),
+                ),
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+            ],
+          ),
         ),
       ),
     );

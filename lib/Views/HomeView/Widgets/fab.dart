@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gc_clone/Views/AddView/add_view.dart';
+import 'package:go_router/go_router.dart';
 
 class CustomFabButton extends StatelessWidget {
   const CustomFabButton({super.key});
@@ -16,12 +16,7 @@ class CustomFabButton extends StatelessWidget {
               return InkWell(
                 onTap: () {
                   Navigator.of(context).pop();
-
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => const AddView(),
-                    ),
-                  );
+                  context.push('/joinCourse');
                 },
                 child: const Padding(
                   padding: EdgeInsets.symmetric(

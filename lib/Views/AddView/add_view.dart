@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gc_clone/Views/AddView/Widgets/add_view_body.dart';
 import 'package:gc_clone/cubit/main_app_bar_cubit.dart';
 import 'package:gc_clone/utils/cores/more_vert_feature.dart/more_vert_feature.dart';
+import 'package:go_router/go_router.dart';
 
 class AddView extends StatelessWidget {
   const AddView({super.key});
@@ -17,7 +18,9 @@ class AddView extends StatelessWidget {
           actions: actions,
           leading: IconButton(
             icon: const Icon(Icons.close),
-            onPressed: () => Navigator.of(context).pop(),
+            onPressed: () {
+              context.go('/');
+            },
           ),
         ),
         body: const Padding(

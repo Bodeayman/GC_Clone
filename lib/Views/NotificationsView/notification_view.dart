@@ -20,8 +20,6 @@ class NotificationView extends StatelessWidget {
             icon: const Icon(Icons.close),
             onPressed: () {
               Navigator.of(context).pop();
-              Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => const HomeView()));
             },
           ),
         ),

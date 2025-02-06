@@ -16,7 +16,7 @@ class SettingsListTile extends StatelessWidget {
     return InkWell(
       child: ListTile(
         title: Text(title),
-        subtitle: Text(title),
+        subtitle: Text(subtitle ?? ""),
       ),
       onTap: () => callBackFunction(context),
     );
