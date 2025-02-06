@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gc_clone/Views/AddView/Widgets/add_view_body.dart';
-import 'package:gc_clone/cubit/main_app_bar_cubit.dart';
+import 'package:gc_clone/cubits/main_app_cubit/main_app_bar_cubit.dart';
 import 'package:gc_clone/utils/cores/more_vert_feature.dart/more_vert_feature.dart';
 import 'package:go_router/go_router.dart';
 

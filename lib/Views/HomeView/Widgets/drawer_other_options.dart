@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gc_clone/Views/HomeView/Widgets/custom_list_tile.dart';
-import 'package:gc_clone/Views/SettingsView/settings_view.dart';
-import 'package:gc_clone/routers.dart';
 import 'package:go_router/go_router.dart';
 
 class DrawerOtherOptions extends StatelessWidget {
