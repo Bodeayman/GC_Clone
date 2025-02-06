@@ -8,7 +8,7 @@ class CourseTitle extends StatelessWidget {
     return Container(
       height: MediaQuery.of(context).size.height / 7,
       decoration: BoxDecoration(
-        color: Colors.blue,
+        color: Colors.red[400],
         borderRadius: BorderRadius.circular(10),
       ),
       width: MediaQuery.of(context).size.width,
@@ -19,11 +19,13 @@ class CourseTitle extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "PHYS 104 - LAB 2",
+              "Discrete Mathematics for CS Students",
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
               style: TextStyle(fontSize: 20),
             ),
             Text(
-              "PHYS 104 - LCTR-01",
+              "Math 205 - LCTR-01",
               style: TextStyle(fontSize: 12),
             )
           ],

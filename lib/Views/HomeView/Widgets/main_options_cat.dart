@@ -16,11 +16,7 @@ class MainOptionsCategory extends StatelessWidget {
           listTileName: "Classes",
           function: (context) {
             Navigator.of(context).pop();
-            Navigator.of(context).pushReplacement(
-              MaterialPageRoute(
-                builder: (context) => const HomeView(),
-              ),
-            );
+            context.go("/");
           },
         ),
         CustomListTile(
