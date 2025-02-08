@@ -42,6 +42,13 @@ class MainApp extends StatelessWidget {
           backgroundColor: kPrimaryColor,
           unselectedItemColor: Colors.grey,
         ),
+        tabBarTheme: TabBarTheme(
+          labelColor: kToDoTabColor,
+          indicatorColor: kToDoTabColor,
+          unselectedLabelColor: Colors.grey,
+          dividerColor: Colors.grey[700],
+          dividerHeight: 0.5,
+        ),
       ),
       themeMode: ThemeMode.dark,
     );

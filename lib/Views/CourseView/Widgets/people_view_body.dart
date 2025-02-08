@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gc_clone/Views/CourseView/Widgets/People/person_tile.dart';
-import 'package:gc_clone/Views/CourseView/Widgets/People/underlined_container.dart';
-import 'package:gc_clone/Views/HomeView/Widgets/course_list_tile.dart';
-import 'package:gc_clone/constants.dart';
+import 'package:gc_clone/utils/cores/underlined_container.dart';
+import 'package:gc_clone/Views/Drawer/course_list_tile.dart';
 
 class PeopleViewBody extends StatelessWidget {
   const PeopleViewBody({super.key});
@@ -12,7 +11,7 @@ class PeopleViewBody extends StatelessWidget {
     return const Column(
       children: [
         UnderlinedContainer(word: "Teachers"),
-        const SizedBox(
+        SizedBox(
           height: 5,
         ),
         PersonTile(
@@ -23,7 +22,7 @@ class PeopleViewBody extends StatelessWidget {
           ),
         ),
         UnderlinedContainer(word: "Classmates"),
-        const SizedBox(
+        SizedBox(
           height: 5,
         ),
         PersonTile(

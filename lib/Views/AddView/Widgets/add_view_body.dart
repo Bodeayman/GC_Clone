@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gc_clone/Views/HomeView/Widgets/course_list_tile.dart';
+import 'package:gc_clone/Views/Drawer/course_list_tile.dart';
 
 class AddViewBody extends StatelessWidget {
   const AddViewBody({super.key});

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 const kPrimaryColor = Color(0xff1f1b24);
+final Color kToDoTabColor = Colors.blue[400]!;
 
 final kTextColor = Colors.grey[400];
 

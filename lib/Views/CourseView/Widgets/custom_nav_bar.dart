@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:gc_clone/Views/AddView/add_view.dart';
 import 'package:gc_clone/cubits/stream_nav_bar/stream_nav_bar_cubit.dart';
 
 class CourseBottomNavBar extends StatefulWidget {

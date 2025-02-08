@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gc_clone/Views/HomeView/Widgets/course_list_tile.dart';
-import 'package:gc_clone/Views/HomeView/Widgets/drawer_other_options.dart';
-import 'package:gc_clone/Views/HomeView/Widgets/main_options_cat.dart';
+import 'package:gc_clone/Views/Drawer/course_list_tile.dart';
+import 'package:gc_clone/Views/Drawer/drawer_other_options.dart';
+import 'package:gc_clone/Views/Drawer/main_options_cat.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MainDrawer extends StatelessWidget {

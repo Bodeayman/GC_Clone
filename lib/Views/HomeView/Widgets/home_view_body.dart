@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gc_clone/Views/HomeView/Widgets/course_item.dart';
 import 'package:gc_clone/Views/HomeView/Widgets/first_box.dart';
+import 'package:gc_clone/constants.dart';
+import 'package:go_router/go_router.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -27,11 +29,11 @@ class ViewToDoListButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () {},
+      onPressed: () => (context).push('/to_do'),
       child: Text(
         "View to-do list",
         style: TextStyle(
-          color: Colors.blue[400],
+          color: kToDoTabColor,
         ),
       ),
     );

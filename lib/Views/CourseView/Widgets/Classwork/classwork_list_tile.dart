@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:gc_clone/Views/Drawer/course_list_tile.dart';
 
-class NotificationListTile extends StatelessWidget {
-  const NotificationListTile(
+class ClassworkListTile extends StatelessWidget {
+  const ClassworkListTile(
       {super.key,
       required this.listTileName,
       required this.color,
       required this.letter});
+  final String listTileName;
   final Color color;
   final String letter;
-  final String listTileName;
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -20,7 +20,7 @@ class NotificationListTile extends StatelessWidget {
         children: [
           ListTile(
             subtitle: const Text(
-              "Section 1 . See details",
+              "No due date",
             ),
             title: Text(
               listTileName,
@@ -33,6 +33,14 @@ class NotificationListTile extends StatelessWidget {
             leading: CourseIcon(
               color: color,
               letter: letter,
+            ),
+            trailing: const Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Text("5/5"),
+                Text("Not turned in"),
+              ],
             ),
           ),
           const SizedBox(

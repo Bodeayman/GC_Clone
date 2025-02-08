@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gc_clone/Views/CourseView/Widgets/announce_input.dart';
-import 'package:gc_clone/Views/CourseView/Widgets/course_title.dart';
-import 'package:gc_clone/Views/CourseView/Widgets/material_list_tile.dart';
+import 'package:gc_clone/Views/CourseView/Widgets/Stream/announce_input.dart';
+import 'package:gc_clone/Views/CourseView/Widgets/Stream/course_title.dart';
+import 'package:gc_clone/Views/CourseView/Widgets/Stream/material_list_tile.dart';
 
 class CourseViewPage extends StatelessWidget {
   const CourseViewPage({super.key});

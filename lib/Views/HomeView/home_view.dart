@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gc_clone/Views/HomeView/Widgets/fab.dart';
 import 'package:gc_clone/Views/HomeView/Widgets/home_view_body.dart';
 import 'package:gc_clone/Views/HomeView/Widgets/main_app_bar.dart';
-import 'package:gc_clone/Views/HomeView/Widgets/main_drawer.dart';
+import 'package:gc_clone/Views/Drawer/main_drawer.dart';
 import 'package:gc_clone/cubits/main_app_cubit/main_app_bar_cubit.dart';
 
 class HomeView extends StatelessWidget {
