@@ -3,6 +3,7 @@ import 'package:gc_clone/Views/AddView/add_view.dart';
 import 'package:gc_clone/Views/CourseView/course_view.dart';
 import 'package:gc_clone/Views/HomeView/home_view.dart';
 import 'package:gc_clone/Views/NotificationsView/notification_view.dart';
+import 'package:gc_clone/Views/OfflineView/offline_view.dart';
 import 'package:gc_clone/Views/SettingsView/settings_view.dart';
 import 'package:gc_clone/Views/TodoListView/todoView.dart';
 import 'package:go_router/go_router.dart';
@@ -33,6 +34,10 @@ final GoRouter router = GoRouter(
     GoRoute(
       path: '/to_do',
       builder: (context, state) => const TodoView(),
+    ),
+    GoRoute(
+      path: '/offline_files',
+      builder: (context, state) => const OfflineView(),
     ),
   ],
   errorPageBuilder: (context, state) {
